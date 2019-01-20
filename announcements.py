@@ -56,10 +56,12 @@ async def help(ctx):
     embed.set_author(name='Help')
     embed.add_field(name=':mega: p!announcementhere (text, ADMINISTRATORS)', value='Announces your text', inline=False)
     embed.add_field(name=':mega: p!announcementeveryone (text, ADMINISTRATORS)', value='Announces text and mentions everyone.', inline=False)
+    embed.add_field(name='Clear', value='Clears an amount of messages.', inline=False)
     embed.add_field(name='Creator', value='Made by enderman slayerr#6780', inline=False)
+    
 
     await client.send_message(author, embed=embed)
-    await client.say(':white_check_mark: HHelp is on its way!')
+    await client.say(':white_check_mark: Help is on its way!')
 
 
 
